@@ -1,10 +1,10 @@
 let lightTheme = "styles/light.css";
 let darkTheme = "styles/dark.css";
 
-//keyboard inputs
+
 document.addEventListener("keydown", keyboardInputHandler);
 
-//handle keyboard inputs
+
 function keyboardInputHandler(e) {
     //grabbing the liveScreen
     let res = document.getElementById("result");
@@ -50,21 +50,21 @@ function keyboardInputHandler(e) {
         res.value += ".";
     }
 
-    //press enter to see result
+    //result
     if (e.key === "Enter") {
         res.value = eval(result.value || null);
     }
 
-    //backspace for removing the last input
+    
     if (e.key === "Backspace") {
         let resultInput = res.value;
 
-        //remove the last element in the string
+        
         res.value = resultInput.substring(0, res.value.length - 1);
     }
 }
 
-// Clears C button.
+// Clears C.
 function clearScreen() {
     document.getElementById("result").value = "";
 }
