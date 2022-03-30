@@ -6,7 +6,7 @@ document.addEventListener("keydown", keyboardInputHandler);
 
 
 function keyboardInputHandler(e) {
-    //grabbing the liveScreen
+  
     let res = document.getElementById("result");
 
     //numbers
